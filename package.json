@@ -1,0 +1,34 @@
+{
+  "name": "bs-react-grid",
+  "version": "0.1.0",
+  "description": "React Grid Layout for BuckleScript/Reason",
+  "main": "lib/js/src/ReactGrid.js",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "BuckleScript",
+    "react",
+    "react-grid-layout"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohadrau/bs-react-grid"
+  },
+  "bugs": {
+    "url": "https://github.com/ohadrau/bs-react-grid/issues"
+  },
+  "homepage": "https://github.com/ohadrau/bs-react-grid#readme",
+  "author": "Ohad Rau <ohadrau@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-grid-layout": "^0.16.6",
+    "reason-react": "^0.3.1"
+  },
+  "devDependencies": {
+    "bs-platform": "^3.0.0"
+  }
+}
