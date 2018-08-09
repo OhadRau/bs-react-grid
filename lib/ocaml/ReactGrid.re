@@ -11,11 +11,12 @@ type layoutItem = {.
   "moved": Js.Nullable.t(bool),
   "static": Js.Nullable.t(bool),
   "isDraggable": Js.Nullable.t(bool),
-  "isResizable": Js.Nullable.t(bool)
+  "isResizable": Js.Nullable.t(bool),
+  "draggableHandle": Js.Nullable.t(string)
 };
 
 let layout(~w, ~h, ~x, ~y, ~i, ~minW=?, ~maxW=?, ~minH=?, ~maxH=?,
-           ~moved=?, ~static=?, ~isDraggable=?, ~isResizable=?, ()) {
+           ~moved=?, ~static=?, ~isDraggable=?, ~isResizable=?, ~draggableHandle=?, ()) {
   "w": w,
   "h": h,
   "x": x,
@@ -28,7 +29,8 @@ let layout(~w, ~h, ~x, ~y, ~i, ~minW=?, ~maxW=?, ~minH=?, ~maxH=?,
   "moved": Js.Nullable.fromOption(moved),
   "static": Js.Nullable.fromOption(static),
   "isDraggable": Js.Nullable.fromOption(isDraggable),
-  "isResizable": Js.Nullable.fromOption(isResizable)
+  "isResizable": Js.Nullable.fromOption(isResizable),
+  "draggableHandle": Js.Nullable.fromOption(draggableHandle)
 };
 
 type layout = Js.Array.t(layoutItem);
@@ -83,6 +85,7 @@ module GridItem = {
      ~rowHeight: option(int) = ?,
      ~maxRows: option(int) = ?,
      ~isDraggable: option(bool) = ?,
+     ~draggableHandle: option(string) = ?,
      ~isResizable: option(bool) = ?,
      ~static: option(bool) = ?,
      ~useCSSTransforms: option(bool) = ?,
@@ -121,6 +124,7 @@ module GridItem = {
          "rowHeight": fromOption(rowHeight),
          "maxRows": fromOption(maxRows),
          "isDraggable": fromOption(isDraggable),
+         "draggableHandle": fromOption(draggableHandle),
          "isResizable": fromOption(isResizable),
          "static": fromOption(static),
          "useCSSTransforms": fromOption(useCSSTransforms),

@@ -15,20 +15,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ohadrau/bs-react-grid"
+    "url": "git+https://github.com/Rolltrax/bs-react-grid"
   },
   "bugs": {
-    "url": "https://github.com/ohadrau/bs-react-grid/issues"
+    "url": "https://github.com/Rolltrax/bs-react-grid/issues"
   },
-  "homepage": "https://github.com/ohadrau/bs-react-grid#readme",
+  "homepage": "https://github.com/Rolltrax/bs-react-grid#readme",
   "author": "Ohad Rau <ohadrau@yahoo.com>",
   "license": "MIT",
   "dependencies": {
     "react": "^16.4.0",
     "react-grid-layout": "^0.16.6",
-    "reason-react": "^0.3.1"
+    "reason-react": "^0.5.3"
   },
   "devDependencies": {
-    "bs-platform": "^3.0.0"
+    "bs-platform": "^4.0.3"
   }
 }
