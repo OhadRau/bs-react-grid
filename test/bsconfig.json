@@ -5,7 +5,7 @@
 {
   "name": "bs-react-grid-test",
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "sources": {
     "dir" : "src",

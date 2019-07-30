@@ -24,11 +24,11 @@
   "author": "Ohad Rau <ohadrau@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.4.0",
+    "react": "^16.8.0",
     "react-grid-layout": "^0.16.6",
-    "reason-react": "^0.5.3"
+    "reason-react": "^0.7.0"
   },
   "devDependencies": {
-    "bs-platform": "^4.0.3"
+    "bs-platform": "^5.0.6"
   }
 }

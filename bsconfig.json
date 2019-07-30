@@ -4,7 +4,7 @@
   "name": "bs-react-grid",
   "version": "0.1.0",
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "sources": {
     "dir" : "src",
@@ -13,6 +13,7 @@
   "bs-dependencies": [
     "reason-react"
   ],
+  "namespace": true,
   "warnings": {
     "error" : "+101"
   },
